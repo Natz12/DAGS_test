@@ -1,3 +1,4 @@
+#test2
 #
 # Licensed to the Apache Software Foundation (ASF) under one
 # or more contributor license agreements.  See the NOTICE file
@@ -68,13 +69,13 @@ if k8s:
                         k8s.V1Container(
                             name="base",
                             volume_mounts=[
-                                k8s.V1VolumeMount(mount_path="/foo/", name="example-kubernetes-test-volume")
+                                k8s.V1VolumeMount(mount_path="/foo/", name="example-kubernetes-test-volume-2")
                             ],
                         )
                     ],
                     volumes=[
                         k8s.V1Volume(
-                            name="example-kubernetes-test-volume",
+                            name="example-kubernetes-test-volume-2",
                             host_path=k8s.V1HostPathVolumeSource(path="/maindir/"),
                         )
                     ],
